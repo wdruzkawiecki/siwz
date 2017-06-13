@@ -69,8 +69,5 @@ def list():
   print(24 * "#" + "\n#   KSIĄŻKA ADRESOWA " + "  #\n" + 24 * "#")
 
   print()
-  # for (first_name, last_name, email, name) in cursor:
-  #   print(first_name + " " + last_name + "\t" + email + "\t" + name)
-
   print(tabulate(cursor, headers=["PRZEDSTAWICIEL", "EMAIL", "KONTRAHENT"]))
   input("\nNaciśnij ENTER aby kontynuować...")

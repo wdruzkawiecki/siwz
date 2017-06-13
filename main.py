@@ -1,6 +1,7 @@
 from subprocess import call
 import contractor as contractor
 import representative as representative
+import sys
 
 while True:
   call("clear")
@@ -13,7 +14,8 @@ while True:
   print("1. Wyświetl kontrahentów")
   print("2. Dodaj kontrahenta")
   print("3. Dodaj przedstawiciela")
-  print("4. Generuj ksiązke adresową\n\n")
+  print("4. Generuj ksiązke adresową")
+  print("5. Wyjście\n\n")
 
   # pobieramy opcje od uzytkownika
   option = input("Wybierz opcję: ")
@@ -26,3 +28,5 @@ while True:
     representative.add()
   elif option == "4":
     representative.list()
+  elif option == "5":
+    sys.exit()
